@@ -1,0 +1,10 @@
+{
+  "name": "clase2-ejemplo",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "test": "node app/test.js"
+  }
+}

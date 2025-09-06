@@ -1,12 +1,36 @@
-# Executable files
-*.exe
-*.out
+# === Global ===
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.orig
 
-# Build directories
-/build/
-/bin/
+# === Node ===
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
 
-# Debug files
-*.dSYM/
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.build/
+dist/
+.venv/
+venv/
+.env
+.env.*
+.pytest_cache/
 
+# === Editors/IDE ===
 .vscode/
+.idea/
+*.iml
