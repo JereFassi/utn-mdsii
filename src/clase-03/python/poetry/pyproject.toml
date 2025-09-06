@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "clase3-python-poetry-ejemplo"
+version = "0.1.0"
+description = "Ejemplo mínimo para Clase 3 - manejo de dependencias con Poetry"
+authors = ["Tu Nombre <tu.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+flask = "^2.3.2"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^24.4.2"
+flake8 = "^7.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

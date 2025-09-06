@@ -1,0 +1,24 @@
+{
+  "name": "clase3-js-ejemplo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Ejemplo m\u00ednimo para Clase 3 - manejo de dependencias con npm/yarn",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "node src/index.js",
+    "test": "node --test || jest --runInBand",
+    "lint": "eslint . || echo \"(eslint no instalado; ejemplo de script)\"",
+    "build": "echo \"(build de ejemplo; agregar tsc/webpack/vite si corresponde)\"",
+    "start": "NODE_ENV=production node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}
