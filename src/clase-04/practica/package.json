@@ -1,0 +1,14 @@
+{
+  "name": "clase4-practicas-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:singleton": "ts-node typescript/singleton_starter.ts",
+    "start:factory": "ts-node typescript/factory_starter.ts",
+    "start:builder": "ts-node typescript/builder_starter.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  }
+}
