@@ -4,13 +4,14 @@ Ejemplo: Builder (Python)
 -------------------------
 Construye un objeto complejo paso a paso con method chaining.
 """
+from typing import Optional
 
 class Computer:
-    def __init__(self):
-        self.cpu = None
-        self.ram = None
-        self.storage = None
-        self.gpu = None
+    def __init__(self, cpu: Optional[str] = None, ram: Optional[int] = None, storage: Optional[str] = None, gpu: Optional[str] = None):
+        self.cpu = cpu
+        self.ram = ram
+        self.storage = storage
+        self.gpu = gpu
 
     def __str__(self):
         return f"Computer(cpu={self.cpu}, ram={self.ram}, storage={self.storage}, gpu={self.gpu})"
@@ -21,23 +22,29 @@ class ComputerBuilder:
         self.computer = Computer()
 
     def add_cpu(self, cpu: str):
-        self.computer.cpu = cpu
+        self.cpu = cpu
         return self
 
     def add_ram(self, ram: str):
-        self.computer.ram = ram
+        self.ram = ram
         return self
 
     def add_storage(self, storage: str):
-        self.computer.storage = storage
+        self.storage = storage
         return self
 
     def add_gpu(self, gpu: str):
-        self.computer.gpu = gpu
+        self.gpu = gpu
         return self
 
     def build(self) -> Computer:
-        return self.computer
+        computer = Computer (
+            cpu = self.cpu,
+            ram = self.ram,
+            storage = self.storage,
+            gpu = self.gpu,
+        )
+        return computer
 
 
 if __name__ == "__main__":
